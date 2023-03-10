@@ -1,0 +1,122 @@
+<h1>WORKLOAD REPOSITORY SQL Report</h1>
+<table border="1">
+  <tr>
+    <th align="center">instance name</th>
+    <th align="center">instance type</th>
+    <th align="center">database</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">qbopp071p-instance-1</td>
+    <td align="left">writer</td>
+    <td align="left">qbopp071p</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th align="center">version</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">PostgreSQL 12.4 on x86_64-pc-linux-gnu, compiled by x86_64-pc-linux-gnu-gcc (GCC) 7.4.0, 64-bit</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th align="center">begin snap id</th>
+    <th align="center">begin snap time</th>
+    <th align="center">end snap id</th>
+    <th align="center">end snap time</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">753</td>
+    <td align="left">2021-08-27 06:00:40.845798-07</td>
+    <td align="right">761</td>
+    <td align="left">2021-08-27 08:00:40.667635-07</td>
+  </tr>
+</table>
+
+<h3>SQL Text</h3>
+<table border="1">
+  <tr>
+    <th align="center">queryid</th>
+    <th align="center">sql hash</th>
+    <th align="center">sql text</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">-2620202327095230070</td>
+    <td align="right">1615002173</td>
+    <td align="left">UPDATE &quot;qbo_data&quot;.&quot;txdetails_1&quot;                                 SET &quot;company_id&quot;=$1, &quot;is_cleared&quot;=$2, &quot;tx_id&quot;=$3, &quot;sequence&quot;=$4                                  WHERE &quot;company_id&quot;=$5 AND &quot;tx_id&quot;=$6 AND &quot;sequence&quot;=$7;</td>
+  </tr>
+</table>
+
+<h3>SQL Plan Statistics</h3>
+<table border="1">
+  <tr>
+    <th align="center">plan hash</th>
+    <th align="center">enabled</th>
+    <th align="center">status</th>
+    <th align="center">estimated startup cost</th>
+    <th align="center">estimated total cost</th>
+    <th align="center">plan created</th>
+    <th align="center">last verified</th>
+    <th align="center">last validated</th>
+    <th align="center">last used</th>
+    <th align="center">created by</th>
+    <th align="center">environment variables</th>
+    <th align="center">has side effects</th>
+    <th align="center">planning time ms</th>
+    <th align="center">execution time ms</th>
+    <th align="center">total time benefit ms</th>
+    <th align="center">execution time benefit ms</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">487838259</td>
+    <td align="left">t</td>
+    <td align="left">Approved</td>
+    <td align="right">0.57</td>
+    <td align="right">8.59</td>
+    <td align="left">2021-07-23 01:57:28.410673</td>
+    <td align="left">2021-07-23 01:57:28.410673</td>
+    <td align="left">2021-07-23 01:57:28.410673</td>
+    <td align="left">2021-08-19</td>
+    <td align="left">postgres</td>
+    <td align="left">{<br />
+    &quot;effective_cache_size&quot;: &quot;11035447&quot;<br />
+}</td>
+    <td align="left">t</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+  </tr>
+</table>
+
+<h3>SQL Plan Outline</h3>
+<table border="1">
+  <tr>
+    <th align="center">plan hash</th>
+    <th align="center">plan outline</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">487838259</td>
+    <td align="left">{<br />
+&#160;&#160;&quot;Fmt&quot;:&#160;&quot;01.00&quot;,<br />
+&#160;&#160;&quot;Outl&quot;:&#160;{<br />
+&#160;&#160;&#160;&#160;&quot;Cmd&quot;:&#160;&quot;Upd&quot;,<br />
+&#160;&#160;&#160;&#160;&quot;Op&quot;:&#160;&quot;Mod&quot;,<br />
+&#160;&#160;&#160;&#160;&quot;QB&quot;:&#160;1,<br />
+&#160;&#160;&#160;&#160;&quot;Plans&quot;:&#160;[<br />
+&#160;&#160;&#160;&#160;&#160;&#160;{<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&quot;Op&quot;:&#160;&quot;IScan&quot;,<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&quot;S&quot;:&#160;&quot;qbo_data&quot;,<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&quot;Idx&quot;:&#160;&quot;txdetails_1_p79_pkey&quot;,<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&quot;Tbl&quot;:&#160;&quot;txdetails_1_p79&quot;,<br />
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&quot;Rid&quot;:&#160;2<br />
+&#160;&#160;&#160;&#160;&#160;&#160;}<br />
+&#160;&#160;&#160;&#160;]<br />
+&#160;&#160;}<br />
+}</td>
+  </tr>
+</table>
+

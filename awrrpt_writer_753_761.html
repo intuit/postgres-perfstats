@@ -1,0 +1,267 @@
+<h1>WORKLOAD REPOSITORY report for</h1>
+<table border="1">
+  <tr>
+    <th align="center">instance name</th>
+    <th align="center">instance type</th>
+    <th align="center">database</th>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th align="center">version</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">PostgreSQL 12.4 on x86_64-pc-linux-gnu, compiled by x86_64-pc-linux-gnu-gcc (GCC) 7.4.0, 64-bit</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th align="center">begin snap id</th>
+    <th align="center">begin snap time</th>
+    <th align="center">end snap id</th>
+    <th align="center">end snap time</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">753</td>
+    <td align="left">2021-08-27 06:00:40.845798-07</td>
+    <td align="right">761</td>
+    <td align="left">2021-08-27 08:00:40.667635-07</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th align="center">elapsed time (mins)</th>
+    <th align="center">db time (mins)</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+  </tr>
+</table>
+
+<h2>Report Summary</h2>
+<h4>Instance Statistics</h4>
+<table border="1">
+  <tr>
+    <th align="center">metric</th>
+    <th align="center">average</th>
+    <th align="center">maximum</th>
+    <th align="center">minimum</th>
+  </tr>
+</table>
+
+<h4>Database Load Profile</h4>
+<table border="1">
+  <tr>
+    <th align="center">metric</th>
+    <th align="center">per second</th>
+    <th align="center">per transaction</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">calls</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+  </tr>
+  <tr valign="top">
+    <td align="left">db_time</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+  </tr>
+</table>
+
+<h5>all times above are in milliseconds</h5>
+<h4>Database Top Wait Events</h4>
+<table border="1">
+  <tr>
+    <th align="center">wait event</th>
+    <th align="center">count</th>
+  </tr>
+</table>
+
+<h5>based on 0 samples</h5>
+<h4>Database Session State</h4>
+<table border="1">
+  <tr>
+    <th align="center">session state</th>
+    <th align="center">count</th>
+    <th align="center">seconds spent</th>
+  </tr>
+</table>
+
+<h5>based on 0 samples</h5>
+<h2>Main Report</h2>
+<h5>
+<ul>
+<li><a href="#SQL Statistics">SQL Statistics</a></li>
+<li><a href="#Object Statistics">Object Statistics</a></li>
+</ul>
+</h5>
+<h3><a name="SQL Statistics"></a>SQL Statistics</h3>
+<h5>
+<ul>
+<li><a href="#SQL ordered by Total Time">SQL ordered by Total Time</a></li>
+<li><a href="#SQL ordered by I/O Time">SQL ordered by I/O Time</a></li>
+<li><a href="#SQL ordered by Logical Reads">SQL ordered by Logical Reads</a></li>
+<li><a href="#SQL ordered by Reads">SQL ordered by Reads</a></li>
+</ul>
+</h5>
+<h4><a name="SQL ordered by Total Time"></a>SQL ordered by Total Time</h4>
+<h5>all times above are in milliseconds</h5>
+<h4><a name="SQL ordered by I/O Time"></a>SQL ordered by I/O Time</h4>
+<table border="1">
+  <tr>
+    <th align="center">blk read time</th>
+    <th align="center">total time</th>
+    <th align="center">calls</th>
+    <th align="center">rows</th>
+    <th align="center">avg block read time</th>
+    <th align="center">avg time</th>
+    <th align="center">avg rows</th>
+    <th align="center">queryid</th>
+    <th align="center">query</th>
+  </tr>
+</table>
+
+<h5>all times above are in milliseconds</h5>
+<h4><a name="SQL ordered by Logical Reads"></a>SQL ordered by Logical Reads</h4>
+<table border="1">
+  <tr>
+    <th align="center">shared blks read &amp; hit</th>
+    <th align="center">local blks read &amp; hit</th>
+    <th align="center">temp blks read</th>
+    <th align="center">calls</th>
+    <th align="center">avg shared blks read &amp; hit</th>
+    <th align="center">avg local blks read &amp; hit</th>
+    <th align="center">avg rows</th>
+    <th align="center">queryid</th>
+    <th align="center">query</th>
+  </tr>
+</table>
+
+<h5>all times above are in milliseconds</h5>
+<h4><a name="SQL ordered by Reads"></a>SQL ordered by Reads</h4>
+<table border="1">
+  <tr>
+    <th align="center">shared blks read</th>
+    <th align="center">shared blks hit</th>
+    <th align="center">local blks read</th>
+    <th align="center">local blks hit</th>
+    <th align="center">temp blks read</th>
+    <th align="center">calls</th>
+    <th align="center">avg shared blks read</th>
+    <th align="center">avg local blks read</th>
+    <th align="center">avg rows</th>
+    <th align="center">queryid</th>
+    <th align="center">query</th>
+  </tr>
+</table>
+
+<h5>all times above are in milliseconds</h5>
+<h3><a name="Object Statistics"></a>Object Statistics</h3>
+<h5>
+<ul>
+<li><a href="#Table ordered by sequential scans">Table ordered by sequential scans</a></li>
+<li><a href="#Table ordered by rows fetched by sequential">Table ordered by rows fetched by sequential scans</a></li>
+<li><a href="#Table ordered by index scans">Table ordered by index scans</a></li>
+<li><a href="#Table ordered by rows fetched by index scans">Table ordered by rows fetched by index scans</a></li>
+</ul>
+</h5>
+<h4><a name="Table ordered by sequential scans">Table ordered by sequential scans</h4>
+<table border="1">
+  <tr>
+    <th align="center">schema</th>
+    <th align="center">table</th>
+    <th align="center">seq scan</th>
+    <th align="center">seq tup read</th>
+    <th align="center">idx scan</th>
+    <th align="center">idx tup fetch</th>
+    <th align="center">tup ins</th>
+    <th align="center">tup upd</th>
+    <th align="center">tup del</th>
+    <th align="center">tup hot upd</th>
+    <th align="center">live tup</th>
+    <th align="center">dead tup</th>
+    <th align="center">vacuum count</th>
+    <th align="center">autovacuum count</th>
+    <th align="center">analyze count</th>
+    <th align="center">autoanalyze count</th>
+  </tr>
+</table>
+
+<h4><a name="Table ordered by rows fetched by sequential">Table ordered by rows fetched by sequential scans</h4>
+<table border="1">
+  <tr>
+    <th align="center">schema</th>
+    <th align="center">table</th>
+    <th align="center">seq scan</th>
+    <th align="center">seq tup read</th>
+    <th align="center">idx_scan</th>
+    <th align="center">idx tup fetch</th>
+    <th align="center">tup ins</th>
+    <th align="center">tup upd</th>
+    <th align="center">tup del</th>
+    <th align="center">tup hot upd</th>
+    <th align="center">live tup</th>
+    <th align="center">dead tup</th>
+    <th align="center">vacuum count</th>
+    <th align="center">autovacuum count</th>
+    <th align="center">analyze count</th>
+    <th align="center">autoanalyze count</th>
+  </tr>
+</table>
+
+<h4><a name="Table ordered by index scans">Table ordered by index scans</h4>
+<table border="1">
+  <tr>
+    <th align="center">schema</th>
+    <th align="center">table</th>
+    <th align="center">seq scan</th>
+    <th align="center">seq tup read</th>
+    <th align="center">idx scan</th>
+    <th align="center">idx tup fetch</th>
+    <th align="center">tup ins</th>
+    <th align="center">tup upd</th>
+    <th align="center">tup del</th>
+    <th align="center">tup hot upd</th>
+    <th align="center">live tup</th>
+    <th align="center">dead tup</th>
+    <th align="center">vacuum count</th>
+    <th align="center">autovacuum count</th>
+    <th align="center">analyze count</th>
+    <th align="center">autoanalyze count</th>
+  </tr>
+</table>
+
+<h4><a name="Table ordered by rows fetched by index scans">Table ordered by rows fetched by index scans</h4>
+<table border="1">
+  <tr>
+    <th align="center">schema</th>
+    <th align="center">table</th>
+    <th align="center">seq scan</th>
+    <th align="center">seq tup read</th>
+    <th align="center">idx scan</th>
+    <th align="center">idx tup fetch</th>
+    <th align="center">tup ins</th>
+    <th align="center">tup upd</th>
+    <th align="center">tup del</th>
+    <th align="center">tup hot upd</th>
+    <th align="center">live tup</th>
+    <th align="center">dead tup</th>
+    <th align="center">vacuum count</th>
+    <th align="center">autovacuum count</th>
+    <th align="center">analyze count</th>
+    <th align="center">autoanalyze count</th>
+  </tr>
+</table>
+
+<h4>Complete List of SQL Text</h4>
+<table border="1">
+  <tr>
+    <th align="center">queryid</th>
+    <th align="center">query</th>
+  </tr>
+</table>
+
