@@ -31,7 +31,7 @@ Postgres has built-in performance statistics views like pg_stat_statements, pg_s
 
 The following diagram shows how to collect performance statistisc and generate AWR reports.
 
-![alt text](https://github.intuit.com/qbo/postgres_perfstats/blob/master/aurora_postgres_awr.png)
+![alt text](https://github.com/intuit/postgres-perfstats/blob/main/aurora_postgres_awr.png)
 &nbsp;
 
 ## Deployment
