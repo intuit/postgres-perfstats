@@ -5,7 +5,7 @@
 -- 2) Set begin snap id (bsnap) and end snap id (esnap)
 -- pqbopc04p=> \set bsnap 90
 -- pqbopc04p=> \set esnap 100 
--- pqbopc04p=> \set string 'txdetails_1' 
+-- pqbopc04p=> \set queryid -8285410219432984762 
 
 -- 3) Run this script
 -- pqbopc04p=> \i chk_sql_hist.sql
@@ -17,11 +17,11 @@ select a.snap_id snap_id_begin,
        b.userid,
        b.queryid,
        b.calls - coalesce(a.calls, 0) calls,
-       round((b.total_exec_time + b.total_plan_time - coalesce(a.total_exec_time + a.total_plan_time, 2))::numeric, 2) total_time,
-       (round((b.total_exec_time + b.total_plan_time - coalesce(a.total_exec_time + a.total_plan_time, 2))::numeric, 2) / (b.calls - coalesce(a.calls, 0))) avg_time, 
-       b.min_plan_time + b.min_exec_time cum_min_time,
-       b.max_plan_time + b.max_exec_time cum_max_time,
-       b.mean_plan_time + b.mean_exec_time cum_mean_time,
+       b.total_time - coalesce(a.total_time, 0) total_time,
+       (b.total_time - coalesce(a.total_time, 0)) / (b.calls - coalesce(a.calls, 0)) avg_time,
+       b.min_time cum_min_time,
+       b.max_time cum_max_time,
+       b.mean_time cum_mean_time,
        b.rows - coalesce(a.rows, 0) "rows",
        b.shared_blks_hit - coalesce(a.shared_blks_hit, 0) shared_blks_hit,
        b.shared_blks_read - coalesce(a.shared_blks_read, 0) shared_blks_read,
@@ -34,7 +34,7 @@ select a.snap_id snap_id_begin,
        b.query
   from perfstat.pg_stat_statements_hist a right join perfstat.pg_stat_statements_hist b
     on (a.userid = b.userid and a.dbid = b.dbid and a.queryid = b.queryid and a.query = b.query and a.snap_id = :bsnap)
- where b.calls - coalesce(a.calls, 0) != 0
-   and b.snap_id = :esnap  
-   and b.query like '%' || :'string' || '%'
+  where b.queryid = :queryid
+    and b.calls - coalesce(a.calls, 0) != 0
+    and b.snap_id = :esnap  
   order by b.queryid, b.userid;

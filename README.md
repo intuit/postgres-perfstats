@@ -145,7 +145,7 @@ For APG 12 or older
 awrrpt12.sql
 ```
 
-awrrpt_writer_753_761.html and awrrpt_reader_753_761.html are sample AWR reports
+awrrpt_writer_20_22.html and awrrpt_reader_20_22.html are sample AWR reports
 
 ### Generate AWR SQL report
 Run the following SQL to genrate Aurora Postgres AWR SQL report

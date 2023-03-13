@@ -3,7 +3,7 @@
 
 select b.snap_id snap_id_end,
        b.snap_time snap_time_end,
-       b.numbackends cum_numbackends,
+       b.numbackends numbackends,
        b.xact_commit - coalesce(a.xact_commit, 0) xact_commit,
        b.xact_rollback - coalesce(a.xact_rollback, 0) xact_rollback,
        b.blks_read- coalesce(a.blks_read, 0) blks_read,

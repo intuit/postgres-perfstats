@@ -6,7 +6,7 @@
 -- pqbopc04p=> \set bsnap 90
 -- pqbopc04p=> \set esnap 100
 -- pqbopc04p=> \set schema qbo_data
--- pqbopc04p=> \set table txdetails_1
+-- pqbopc04p=> \set table txdetails_1_p10
 
 -- 3) Run this script
 -- pqbopc04p=> \i chk_table_hist.sql
