@@ -1,0 +1,2986 @@
+<h1>WORKLOAD REPOSITORY report for</h1>
+<table border="1">
+  <tr>
+    <th align="center">instance name</th>
+    <th align="center">instance type</th>
+    <th align="center">database</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">eqbopc03p-instance-1</td>
+    <td align="left">writer</td>
+    <td align="left">eqbopc03p</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th align="center">version</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">PostgreSQL 14.3 on x86_64-pc-linux-gnu, compiled by x86_64-pc-linux-gnu-gcc (GCC) 7.4.0, 64-bit</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th align="center">begin snap id</th>
+    <th align="center">begin snap time</th>
+    <th align="center">end snap id</th>
+    <th align="center">end snap time</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">9185</td>
+    <td align="left">2023-03-14 08:00:17.460598-07</td>
+    <td align="right">9189</td>
+    <td align="left">2023-03-14 09:00:17.669592-07</td>
+  </tr>
+</table>
+
+<table border="1">
+  <tr>
+    <th align="center">elapsed time (mins)</th>
+    <th align="center">db time (mins)</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">60.00</td>
+    <td align="right">0.30</td>
+  </tr>
+</table>
+
+<h2>Report Summary</h2>
+<h4>Instance Statistics</h4>
+<table border="1">
+  <tr>
+    <th align="center">metric</th>
+    <th align="center">average</th>
+    <th align="center">maximum</th>
+    <th align="center">minimum</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">CPUUtilization (percent)</td>
+    <td align="right">9.55</td>
+    <td align="right">12.17</td>
+    <td align="right">8.90</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">FreeableMemory (mb)</td>
+    <td align="right">6311.94</td>
+    <td align="right">6334.93</td>
+    <td align="right">6212.37</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">ReadIOPS (count/second)</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">ReadLatency (milliseconds)</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">ReadThroughput (mb/second)</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">WriteIOPS (count/second)</td>
+    <td align="right">245.17</td>
+    <td align="right">3155.02</td>
+    <td align="right">36.69</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">WriteLatency (milliseconds)</td>
+    <td align="right">0.23</td>
+    <td align="right">0.29</td>
+    <td align="right">0.09</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">WriteThroughput (mb/second)</td>
+    <td align="right">0.09</td>
+    <td align="right">1.19</td>
+    <td align="right">0.01</td>
+  </tr>
+</table>
+
+<h4>Database Load Profile</h4>
+<table border="1">
+  <tr>
+    <th align="center">metric</th>
+    <th align="center">per second</th>
+    <th align="center">per transaction</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">blk_read_time</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">blks_hit</td>
+    <td align="right">97648.47</td>
+    <td align="right">19801.45</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">blks_read</td>
+    <td align="right">3.88</td>
+    <td align="right">0.79</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">blk_write_time</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">calls</td>
+    <td align="right">1.02</td>
+    <td align="right">0.21</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">db_time</td>
+    <td align="right">5.00</td>
+    <td align="right">1.01</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">deadlocks</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">temp_bytes</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">temp_files</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">tup_deleted</td>
+    <td align="right">0.01</td>
+    <td align="right">0.00</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">tup_fetched</td>
+    <td align="right">683.68</td>
+    <td align="right">138.64</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">tup_inserted</td>
+    <td align="right">43.95</td>
+    <td align="right">8.91</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">tup_returned</td>
+    <td align="right">6857.58</td>
+    <td align="right">1390.60</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">tup_updated</td>
+    <td align="right">0.28</td>
+    <td align="right">0.06</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">xact_commit</td>
+    <td align="right">4.90</td>
+    <td align="right">0.99</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">xact_rollback</td>
+    <td align="right">0.03</td>
+    <td align="right">0.01</td>
+  </tr>
+</table>
+
+<h5>all times above are in milliseconds</h5>
+<h4>Database Top Wait Events</h4>
+<table border="1">
+  <tr>
+    <th align="center">wait event</th>
+    <th align="center">count</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">Client:ClientRead</td>
+    <td align="right">208.07</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">Extension:Extension</td>
+    <td align="right">1.50</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">CPU</td>
+    <td align="right">1.16</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">Timeout:VacuumDelay</td>
+    <td align="right">0.82</td>
+  </tr>
+</table>
+
+<h5>based on 120 samples</h5>
+<h4>Database Session State</h4>
+<table border="1">
+  <tr>
+    <th align="center">session state</th>
+    <th align="center">count</th>
+    <th align="center">seconds spent</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">idle</td>
+    <td align="right">208.02</td>
+    <td align="right">100432939.87</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">active</td>
+    <td align="right">2.48</td>
+    <td align="right">5795.11</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">idle in transaction</td>
+    <td align="right">0.05</td>
+    <td align="right">104.28</td>
+  </tr>
+</table>
+
+<h5>based on 120 samples</h5>
+<h2>Main Report</h2>
+<h5>
+<ul>
+<li><a href="#SQL Statistics">SQL Statistics</a></li>
+<li><a href="#Object Statistics">Object Statistics</a></li>
+</ul>
+</h5>
+<h3><a name="SQL Statistics"></a>SQL Statistics</h3>
+<h5>
+<ul>
+<li><a href="#SQL ordered by Total Time">SQL ordered by Total Time</a></li>
+<li><a href="#SQL ordered by I/O Time">SQL ordered by I/O Time</a></li>
+<li><a href="#SQL ordered by Logical Reads">SQL ordered by Logical Reads</a></li>
+<li><a href="#SQL ordered by Reads">SQL ordered by Reads</a></li>
+</ul>
+</h5>
+<h4><a name="SQL ordered by Total Time"></a>SQL ordered by Total Time</h4>
+<table border="1">
+  <tr>
+    <th align="center">total time</th>
+    <th align="center">calls</th>
+    <th align="center">blk read time</th>
+    <th align="center">rows</th>
+    <th align="center">%total</th>
+    <th align="center">avg time</th>
+    <th align="center">avg blk read time</th>
+    <th align="center">avg rows</th>
+    <th align="center">queryid</th>
+    <th align="center">query</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">4902.87</td>
+    <td align="right">92</td>
+    <td align="right">0.00</td>
+    <td align="right">92</td>
+    <td align="right">27.25</td>
+    <td align="right">53.29</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#-1032710879627254342">-1032710879627254342</td>
+    <td align="left">-- Create new sample<br />
+<br />
+select partman.run_maintenance($1)</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">2509.80</td>
+    <td align="right">4</td>
+    <td align="right">0.00</td>
+    <td align="right">36356</td>
+    <td align="right">13.95</td>
+    <td align="right">627.45</td>
+    <td align="right">0.00</td>
+    <td align="right">9089.00</td>
+    <td align="left"><a href="#-6127590146053768719">-6127590146053768719</td>
+    <td align="left">insert into perfstat.dba_plans_hist<br />
+  select a.*, $1, b.*<br />
+  </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">2234.69</td>
+    <td align="right">9</td>
+    <td align="right">0.00</td>
+    <td align="right">909</td>
+    <td align="right">12.42</td>
+    <td align="right">248.30</td>
+    <td align="right">0.00</td>
+    <td align="right">101.00</td>
+    <td align="left"><a href="#6803460167082891328">6803460167082891328</td>
+    <td align="left">SELECT table_schema, table_name,<br />
+    total_bytes<br />
+     , tabl</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">2096.34</td>
+    <td align="right">9</td>
+    <td align="right">0.00</td>
+    <td align="right">117</td>
+    <td align="right">11.65</td>
+    <td align="right">232.93</td>
+    <td align="right">0.00</td>
+    <td align="right">13.00</td>
+    <td align="left"><a href="#-5510623395206710615">-5510623395206710615</td>
+    <td align="left">SELECT nspname, sum(pg_relation_size(c.oid)) AS size_bytes, </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1748.31</td>
+    <td align="right">4</td>
+    <td align="right">0.00</td>
+    <td align="right">36356</td>
+    <td align="right">9.72</td>
+    <td align="right">437.08</td>
+    <td align="right">0.00</td>
+    <td align="right">9089.00</td>
+    <td align="left"><a href="#7100550043432595085">7100550043432595085</td>
+    <td align="left">insert into perfstat.dba_plans_hist<br />
+  select a.*, b.*, c.*<br />
+ </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">656.36</td>
+    <td align="right">9</td>
+    <td align="right">0.00</td>
+    <td align="right">0</td>
+    <td align="right">3.65</td>
+    <td align="right">72.93</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="left"><a href="#2436620553143042317">2436620553143042317</td>
+    <td align="left">SELECT activity.pid, activity.query, blocking.pid AS blockin</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">637.69</td>
+    <td align="right">60</td>
+    <td align="right">0.00</td>
+    <td align="right">12722</td>
+    <td align="right">3.54</td>
+    <td align="right">10.63</td>
+    <td align="right">0.00</td>
+    <td align="right">212.03</td>
+    <td align="left"><a href="#-561560039988014454">-561560039988014454</td>
+    <td align="left">-- Create new sample<br />
+<br />
+insert into perfstat.pg_stat_activity_</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">570.97</td>
+    <td align="right">256</td>
+    <td align="right">0.00</td>
+    <td align="right">256</td>
+    <td align="right">3.17</td>
+    <td align="right">2.23</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#5495374963773122853">5495374963773122853</td>
+    <td align="left">insert into perfstat.host_stat_hist select a.*, $1, $3, $5, </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">468.49</td>
+    <td align="right">4</td>
+    <td align="right">0.00</td>
+    <td align="right">15976</td>
+    <td align="right">2.60</td>
+    <td align="right">117.12</td>
+    <td align="right">0.00</td>
+    <td align="right">3994.00</td>
+    <td align="left"><a href="#-7873017616315534743">-7873017616315534743</td>
+    <td align="left">insert into perfstat.pg_stat_all_indexes_hist<br />
+  select a.*, </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">385.10</td>
+    <td align="right">60</td>
+    <td align="right">0.00</td>
+    <td align="right">12664</td>
+    <td align="right">2.14</td>
+    <td align="right">6.42</td>
+    <td align="right">0.00</td>
+    <td align="right">211.07</td>
+    <td align="left"><a href="#3213663317253795746">3213663317253795746</td>
+    <td align="left">insert into perfstat.pg_stat_activity_sample<br />
+  select now(),</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">347.60</td>
+    <td align="right">4</td>
+    <td align="right">0.00</td>
+    <td align="right">9440</td>
+    <td align="right">1.93</td>
+    <td align="right">86.90</td>
+    <td align="right">0.00</td>
+    <td align="right">2360.00</td>
+    <td align="left"><a href="#4160300323129592204">4160300323129592204</td>
+    <td align="left">insert into perfstat.pg_stat_all_tables_hist<br />
+  select a.*, $</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">267.16</td>
+    <td align="right">4</td>
+    <td align="right">0.00</td>
+    <td align="right">15976</td>
+    <td align="right">1.48</td>
+    <td align="right">66.79</td>
+    <td align="right">0.00</td>
+    <td align="right">3994.00</td>
+    <td align="left"><a href="#-7657275187723770664">-7657275187723770664</td>
+    <td align="left">insert into perfstat.pg_stat_all_indexes_hist<br />
+  select a.*, </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">192.68</td>
+    <td align="right">4</td>
+    <td align="right">0.00</td>
+    <td align="right">9440</td>
+    <td align="right">1.07</td>
+    <td align="right">48.17</td>
+    <td align="right">0.00</td>
+    <td align="right">2360.00</td>
+    <td align="left"><a href="#5396683731220376220">5396683731220376220</td>
+    <td align="left">insert into perfstat.pg_stat_all_tables_hist<br />
+  select a.*, b</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">167.06</td>
+    <td align="right">180</td>
+    <td align="right">0.00</td>
+    <td align="right">12722</td>
+    <td align="right">0.93</td>
+    <td align="right">0.93</td>
+    <td align="right">0.00</td>
+    <td align="right">70.68</td>
+    <td align="left"><a href="#-1438517490859612793">-1438517490859612793</td>
+    <td align="left">FETCH 100 FROM c1</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">118.24</td>
+    <td align="right">9</td>
+    <td align="right">0.00</td>
+    <td align="right">54</td>
+    <td align="right">0.66</td>
+    <td align="right">13.14</td>
+    <td align="right">0.00</td>
+    <td align="right">6.00</td>
+    <td align="left"><a href="#6185099911762861940">6185099911762861940</td>
+    <td align="left">SELECT db_list.datname AS db_name, pg_database_size(db_list.</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">92.66</td>
+    <td align="right">60</td>
+    <td align="right">0.00</td>
+    <td align="right">0</td>
+    <td align="right">0.52</td>
+    <td align="right">1.54</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="left"><a href="#-5523777252683449658">-5523777252683449658</td>
+    <td align="left">DECLARE c1 CURSOR FOR<br />
+SELECT datid, datname, pid, leader_pid</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">74.13</td>
+    <td align="right">9</td>
+    <td align="right">0.00</td>
+    <td align="right">54</td>
+    <td align="right">0.41</td>
+    <td align="right">8.24</td>
+    <td align="right">0.00</td>
+    <td align="right">6.00</td>
+    <td align="left"><a href="#6936134556324061259">6936134556324061259</td>
+    <td align="left">SELECT datid, datname, round($1 * blks_hit / (blks_hit + blk</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">58.68</td>
+    <td align="right">4</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">0.33</td>
+    <td align="right">14.67</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#7533282351734321369">7533282351734321369</td>
+    <td align="left">insert into perfstat.pg_stat_database_hist<br />
+  select a.*, $1,</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">51.96</td>
+    <td align="right">4</td>
+    <td align="right">0.00</td>
+    <td align="right">168</td>
+    <td align="right">0.29</td>
+    <td align="right">12.99</td>
+    <td align="right">0.00</td>
+    <td align="right">42.00</td>
+    <td align="left"><a href="#-128744194504451862">-128744194504451862</td>
+    <td align="left">insert into perfstat.pg_stat_statements_hist <br />
+  select a.*, </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">50.77</td>
+    <td align="right">4</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">0.28</td>
+    <td align="right">12.69</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#-2858549490667659655">-2858549490667659655</td>
+    <td align="left">insert into perfstat.pg_stat_database_hist<br />
+  select a.*, b.*</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">48.60</td>
+    <td align="right">4</td>
+    <td align="right">0.00</td>
+    <td align="right">285</td>
+    <td align="right">0.27</td>
+    <td align="right">12.15</td>
+    <td align="right">0.00</td>
+    <td align="right">71.25</td>
+    <td align="left"><a href="#-6161684126527351558">-6161684126527351558</td>
+    <td align="left">insert into perfstat.pg_stat_statements_hist <br />
+  select a.*, </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">45.25</td>
+    <td align="right">1</td>
+    <td align="right">0.00</td>
+    <td align="right">6</td>
+    <td align="right">0.25</td>
+    <td align="right">45.25</td>
+    <td align="right">0.00</td>
+    <td align="right">6.00</td>
+    <td align="left"><a href="#-8329537378231066664">-8329537378231066664</td>
+    <td align="left">SELECT<br />
+    relname,<br />
+    indexrelname,<br />
+    idx_scan,<br />
+    idx_</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">39.22</td>
+    <td align="right">4</td>
+    <td align="right">0.00</td>
+    <td align="right">843</td>
+    <td align="right">0.22</td>
+    <td align="right">9.81</td>
+    <td align="right">0.00</td>
+    <td align="right">210.75</td>
+    <td align="left"><a href="#8972793084872953885">8972793084872953885</td>
+    <td align="left">insert into perfstat.pg_stat_activity_hist<br />
+  select a.*, b.*</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">37.74</td>
+    <td align="right">720</td>
+    <td align="right">0.00</td>
+    <td align="right">720</td>
+    <td align="right">0.21</td>
+    <td align="right">0.05</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#-6327990488402249785">-6327990488402249785</td>
+    <td align="left">UPDATE "qbo"."gg_heartbeat"                                 </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">26.09</td>
+    <td align="right">1</td>
+    <td align="right">0.00</td>
+    <td align="right">1456</td>
+    <td align="right">0.15</td>
+    <td align="right">26.09</td>
+    <td align="right">0.00</td>
+    <td align="right">1456.00</td>
+    <td align="left"><a href="#64027531064122852">64027531064122852</td>
+    <td align="left">SELECT schemaname,<br />
+       relname,<br />
+       n_tup_ins as inser</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">25.73</td>
+    <td align="right">4</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">0.14</td>
+    <td align="right">6.43</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#-2183793328889736026">-2183793328889736026</td>
+    <td align="left">insert into perfstat.pg_stat_activity_hist<br />
+  select a.*, $1,</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">22.57</td>
+    <td align="right">4</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">0.13</td>
+    <td align="right">5.64</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#-4541074755048071015">-4541074755048071015</td>
+    <td align="left">-- Create new snap<br />
+<br />
+insert into perfstat.instance_hist <br />
+  se</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">20.15</td>
+    <td align="right">60</td>
+    <td align="right">0.00</td>
+    <td align="right">60</td>
+    <td align="right">0.11</td>
+    <td align="right">0.34</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#8287667184453487934">8287667184453487934</td>
+    <td align="left">select server_id<br />
+  from aurora_replica_status()<br />
+  where exis</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">19.91</td>
+    <td align="right">9</td>
+    <td align="right">0.00</td>
+    <td align="right">8</td>
+    <td align="right">0.11</td>
+    <td align="right">2.21</td>
+    <td align="right">0.00</td>
+    <td align="right">0.89</td>
+    <td align="left"><a href="#3273643683961306154">3273643683961306154</td>
+    <td align="left">SELECT pid, query, wait_event FROM pg_stat_activity WHERE st</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">19.19</td>
+    <td align="right">9</td>
+    <td align="right">0.00</td>
+    <td align="right">9</td>
+    <td align="right">0.11</td>
+    <td align="right">2.13</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#-7048893708227198588">-7048893708227198588</td>
+    <td align="left">SELECT count(*) FROM pg_stat_activity WHERE state=$1</td>
+  </tr>
+</table>
+
+<h5>all times above are in milliseconds</h5>
+<h4><a name="SQL ordered by I/O Time"></a>SQL ordered by I/O Time</h4>
+<table border="1">
+  <tr>
+    <th align="center">blk read time</th>
+    <th align="center">total time</th>
+    <th align="center">calls</th>
+    <th align="center">rows</th>
+    <th align="center">avg block read time</th>
+    <th align="center">avg time</th>
+    <th align="center">avg rows</th>
+    <th align="center">queryid</th>
+    <th align="center">query</th>
+  </tr>
+</table>
+
+<h5>all times above are in milliseconds</h5>
+<h4><a name="SQL ordered by Logical Reads"></a>SQL ordered by Logical Reads</h4>
+<table border="1">
+  <tr>
+    <th align="center">shared blks read &amp; hit</th>
+    <th align="center">local blks read &amp; hit</th>
+    <th align="center">temp blks read</th>
+    <th align="center">calls</th>
+    <th align="center">avg shared blks read &amp; hit</th>
+    <th align="center">avg local blks read &amp; hit</th>
+    <th align="center">avg rows</th>
+    <th align="center">queryid</th>
+    <th align="center">query</th>
+  </tr>
+  <tr valign="top">
+    <td align="right">1346454.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">9</td>
+    <td align="right">149606.00</td>
+    <td align="right">0.00</td>
+    <td align="right">13.00</td>
+    <td align="left"><a href="#-5510623395206710615">-5510623395206710615</td>
+    <td align="left">SELECT nspname, sum(pg_relation_size(c.oid)) AS size_bytes, </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1205877.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">9</td>
+    <td align="right">133986.33</td>
+    <td align="right">0.00</td>
+    <td align="right">101.00</td>
+    <td align="left"><a href="#6803460167082891328">6803460167082891328</td>
+    <td align="left">SELECT table_schema, table_name,<br />
+    total_bytes<br />
+     , tabl</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1064672.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">92</td>
+    <td align="right">11572.52</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#-1032710879627254342">-1032710879627254342</td>
+    <td align="left">-- Create new sample<br />
+<br />
+select partman.run_maintenance($1)</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">364918.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">91229.50</td>
+    <td align="right">0.00</td>
+    <td align="right">9089.00</td>
+    <td align="left"><a href="#7100550043432595085">7100550043432595085</td>
+    <td align="left">insert into perfstat.dba_plans_hist<br />
+  select a.*, b.*, c.*<br />
+ </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">357982.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">89495.50</td>
+    <td align="right">0.00</td>
+    <td align="right">9089.00</td>
+    <td align="left"><a href="#-6127590146053768719">-6127590146053768719</td>
+    <td align="left">insert into perfstat.dba_plans_hist<br />
+  select a.*, $1, b.*<br />
+  </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">95616.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">23904.00</td>
+    <td align="right">0.00</td>
+    <td align="right">3994.00</td>
+    <td align="left"><a href="#-7657275187723770664">-7657275187723770664</td>
+    <td align="left">insert into perfstat.pg_stat_all_indexes_hist<br />
+  select a.*, </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">91819.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">60</td>
+    <td align="right">1530.32</td>
+    <td align="right">0.00</td>
+    <td align="right">211.07</td>
+    <td align="left"><a href="#3213663317253795746">3213663317253795746</td>
+    <td align="left">insert into perfstat.pg_stat_activity_sample<br />
+  select now(),</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">83019.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">60</td>
+    <td align="right">1383.65</td>
+    <td align="right">0.00</td>
+    <td align="right">212.03</td>
+    <td align="left"><a href="#-561560039988014454">-561560039988014454</td>
+    <td align="left">-- Create new sample<br />
+<br />
+insert into perfstat.pg_stat_activity_</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">82064.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">20516.00</td>
+    <td align="right">0.00</td>
+    <td align="right">3994.00</td>
+    <td align="left"><a href="#-7873017616315534743">-7873017616315534743</td>
+    <td align="left">insert into perfstat.pg_stat_all_indexes_hist<br />
+  select a.*, </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">56054.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">14013.50</td>
+    <td align="right">0.00</td>
+    <td align="right">2360.00</td>
+    <td align="left"><a href="#5396683731220376220">5396683731220376220</td>
+    <td align="left">insert into perfstat.pg_stat_all_tables_hist<br />
+  select a.*, b</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">49038.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">12259.50</td>
+    <td align="right">0.00</td>
+    <td align="right">2360.00</td>
+    <td align="left"><a href="#4160300323129592204">4160300323129592204</td>
+    <td align="left">insert into perfstat.pg_stat_all_tables_hist<br />
+  select a.*, $</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">48546.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">256</td>
+    <td align="right">189.63</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#5495374963773122853">5495374963773122853</td>
+    <td align="left">insert into perfstat.host_stat_hist select a.*, $1, $3, $5, </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">30944.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">1</td>
+    <td align="right">30944.00</td>
+    <td align="right">0.00</td>
+    <td align="right">6.00</td>
+    <td align="left"><a href="#-8329537378231066664">-8329537378231066664</td>
+    <td align="left">SELECT<br />
+    relname,<br />
+    indexrelname,<br />
+    idx_scan,<br />
+    idx_</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">25682.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">180</td>
+    <td align="right">142.68</td>
+    <td align="right">0.00</td>
+    <td align="right">70.68</td>
+    <td align="left"><a href="#-1438517490859612793">-1438517490859612793</td>
+    <td align="left">FETCH 100 FROM c1</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">17640.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">60</td>
+    <td align="right">294.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="left"><a href="#-5523777252683449658">-5523777252683449658</td>
+    <td align="left">DECLARE c1 CURSOR FOR<br />
+SELECT datid, datname, pid, leader_pid</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">8582.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">2145.50</td>
+    <td align="right">0.00</td>
+    <td align="right">210.75</td>
+    <td align="left"><a href="#8972793084872953885">8972793084872953885</td>
+    <td align="left">insert into perfstat.pg_stat_activity_hist<br />
+  select a.*, b.*</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">7859.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">60</td>
+    <td align="right">130.98</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#8287667184453487934">8287667184453487934</td>
+    <td align="left">select server_id<br />
+  from aurora_replica_status()<br />
+  where exis</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">3647.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">911.75</td>
+    <td align="right">0.00</td>
+    <td align="right">71.25</td>
+    <td align="left"><a href="#-6161684126527351558">-6161684126527351558</td>
+    <td align="left">insert into perfstat.pg_stat_statements_hist <br />
+  select a.*, </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">3026.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">756.50</td>
+    <td align="right">0.00</td>
+    <td align="right">42.00</td>
+    <td align="left"><a href="#-128744194504451862">-128744194504451862</td>
+    <td align="left">insert into perfstat.pg_stat_statements_hist <br />
+  select a.*, </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">2887.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">720</td>
+    <td align="right">4.01</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#-6327990488402249785">-6327990488402249785</td>
+    <td align="left">UPDATE "qbo"."gg_heartbeat"                                 </td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1789.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">1</td>
+    <td align="right">1789.00</td>
+    <td align="right">0.00</td>
+    <td align="right">1456.00</td>
+    <td align="left"><a href="#64027531064122852">64027531064122852</td>
+    <td align="left">SELECT schemaname,<br />
+       relname,<br />
+       n_tup_ins as inser</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1140.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">285.00</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#7533282351734321369">7533282351734321369</td>
+    <td align="left">insert into perfstat.pg_stat_database_hist<br />
+  select a.*, $1,</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">1128.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">282.00</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#-2183793328889736026">-2183793328889736026</td>
+    <td align="left">insert into perfstat.pg_stat_activity_hist<br />
+  select a.*, $1,</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">908.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">227.00</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#-4541074755048071015">-4541074755048071015</td>
+    <td align="left">-- Create new snap<br />
+<br />
+insert into perfstat.instance_hist <br />
+  se</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">876.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">219.00</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#-2858549490667659655">-2858549490667659655</td>
+    <td align="left">insert into perfstat.pg_stat_database_hist<br />
+  select a.*, b.*</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">836.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">209.00</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#9046686748180979929">9046686748180979929</td>
+    <td align="left">insert into perfstat.instance_hist<br />
+  select a.*, b.*, pg_pos</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">768.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">256</td>
+    <td align="right">3.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="left"><a href="#-9078064791076675244">-9078064791076675244</td>
+    <td align="left">SELECT plan_hash, status, environment_variables, plan_outlin</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">752.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">4</td>
+    <td align="right">188.00</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#-951605452328581744">-951605452328581744</td>
+    <td align="left">insert into perfstat.snap select coalesce(max(snap_id), $1)+</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">306.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">9</td>
+    <td align="right">34.00</td>
+    <td align="right">0.00</td>
+    <td align="right">6.00</td>
+    <td align="left"><a href="#6185099911762861940">6185099911762861940</td>
+    <td align="left">SELECT db_list.datname AS db_name, pg_database_size(db_list.</td>
+  </tr>
+  <tr valign="top">
+    <td align="right">118.00</td>
+    <td align="right">0.00</td>
+    <td align="right">0.00</td>
+    <td align="right">59</td>
+    <td align="right">2.00</td>
+    <td align="right">0.00</td>
+    <td align="right">1.00</td>
+    <td align="left"><a href="#4319794120535334560">4319794120535334560</td>
+    <td align="left">SELECT  "source" ,  cast(to_char("last_update", $1) as varch</td>
+  </tr>
+</table>
+
+<h5>all times above are in milliseconds</h5>
+<h4><a name="SQL ordered by Reads"></a>SQL ordered by Reads</h4>
+<table border="1">
+  <tr>
+    <th align="center">shared blks read</th>
+    <th align="center">shared blks hit</th>
+    <th align="center">local blks read</th>
+    <th align="center">local blks hit</th>
+    <th align="center">temp blks read</th>
+    <th align="center">calls</th>
+    <th align="center">avg shared blks read</th>
+    <th align="center">avg local blks read</th>
+    <th align="center">avg rows</th>
+    <th align="center">queryid</th>
+    <th align="center">query</th>
+  </tr>
+</table>
+
+<h5>all times above are in milliseconds</h5>
+<h3><a name="Object Statistics"></a>Object Statistics</h3>
+<h5>
+<ul>
+<li><a href="#Table ordered by sequential scans">Table ordered by sequential scans</a></li>
+<li><a href="#Table ordered by rows fetched by sequential">Table ordered by rows fetched by sequential scans</a></li>
+<li><a href="#Table ordered by index scans">Table ordered by index scans</a></li>
+<li><a href="#Table ordered by rows fetched by index scans">Table ordered by rows fetched by index scans</a></li>
+</ul>
+</h5>
+<h4><a name="Table ordered by sequential scans">Table ordered by sequential scans</h4>
+<table border="1">
+  <tr>
+    <th align="center">schema</th>
+    <th align="center">table</th>
+    <th align="center">seq scan</th>
+    <th align="center">seq tup read</th>
+    <th align="center">idx scan</th>
+    <th align="center">idx tup fetch</th>
+    <th align="center">tup ins</th>
+    <th align="center">tup upd</th>
+    <th align="center">tup del</th>
+    <th align="center">tup hot upd</th>
+    <th align="center">live tup</th>
+    <th align="center">dead tup</th>
+    <th align="center">vacuum count</th>
+    <th align="center">autovacuum count</th>
+    <th align="center">analyze count</th>
+    <th align="center">autoanalyze count</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">part_config</td>
+    <td align="right">8824</td>
+    <td align="right">46460</td>
+    <td align="right">284</td>
+    <td align="right">284</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">qbo</td>
+    <td align="left">gg_heartbeat</td>
+    <td align="right">779</td>
+    <td align="right">779</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">720</td>
+    <td align="right">0</td>
+    <td align="right">720</td>
+    <td align="right">-1</td>
+    <td align="right">18</td>
+    <td align="right">0</td>
+    <td align="right">13</td>
+    <td align="right">0</td>
+    <td align="right">13</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">apg_plan_mgmt</td>
+    <td align="left">plans</td>
+    <td align="right">4</td>
+    <td align="right">36356</td>
+    <td align="right">797</td>
+    <td align="right">605</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">instance_hist_default</td>
+    <td align="right">4</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_default</td>
+    <td align="right">4</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_dba_plans_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">part_config_sub</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">184</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">hint_plan</td>
+    <td align="left">hints</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_pg_stat_activity_sample</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">dba_plans_hist_p2022_12_14</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_pg_stat_all_indexes_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_pg_stat_all_tables_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_pg_stat_database_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_pg_stat_statements_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_pg_stat_activity_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">dba_plans_hist_default</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">4</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">dba_plans_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_instance_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_snap1</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_snap</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+</table>
+
+<h4><a name="Table ordered by rows fetched by sequential">Table ordered by rows fetched by sequential scans</h4>
+<table border="1">
+  <tr>
+    <th align="center">schema</th>
+    <th align="center">table</th>
+    <th align="center">seq scan</th>
+    <th align="center">seq tup read</th>
+    <th align="center">idx_scan</th>
+    <th align="center">idx tup fetch</th>
+    <th align="center">tup ins</th>
+    <th align="center">tup upd</th>
+    <th align="center">tup del</th>
+    <th align="center">tup hot upd</th>
+    <th align="center">live tup</th>
+    <th align="center">dead tup</th>
+    <th align="center">vacuum count</th>
+    <th align="center">autovacuum count</th>
+    <th align="center">analyze count</th>
+    <th align="center">autoanalyze count</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">part_config</td>
+    <td align="right">8824</td>
+    <td align="right">46460</td>
+    <td align="right">284</td>
+    <td align="right">284</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">apg_plan_mgmt</td>
+    <td align="left">plans</td>
+    <td align="right">4</td>
+    <td align="right">36356</td>
+    <td align="right">797</td>
+    <td align="right">605</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">qbo</td>
+    <td align="left">gg_heartbeat</td>
+    <td align="right">779</td>
+    <td align="right">779</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">720</td>
+    <td align="right">0</td>
+    <td align="right">720</td>
+    <td align="right">-1</td>
+    <td align="right">18</td>
+    <td align="right">0</td>
+    <td align="right">13</td>
+    <td align="right">0</td>
+    <td align="right">13</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">hint_plan</td>
+    <td align="left">hints</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">part_config_sub</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">184</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_dba_plans_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_pg_stat_activity_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_instance_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">dba_plans_hist_p2022_12_14</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_pg_stat_activity_sample</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_pg_stat_all_indexes_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_pg_stat_all_tables_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_pg_stat_database_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_pg_stat_statements_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_snap1</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_snap</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">dba_plans_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">dba_plans_hist_default</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">4</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">template_perfstat_host_stat_hist</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">&nbsp; </td>
+    <td align="right">&nbsp; </td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">partman</td>
+    <td align="left">custom_time_partitions</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+</table>
+
+<h4><a name="Table ordered by index scans">Table ordered by index scans</h4>
+<table border="1">
+  <tr>
+    <th align="center">schema</th>
+    <th align="center">table</th>
+    <th align="center">seq scan</th>
+    <th align="center">seq tup read</th>
+    <th align="center">idx scan</th>
+    <th align="center">idx tup fetch</th>
+    <th align="center">tup ins</th>
+    <th align="center">tup upd</th>
+    <th align="center">tup del</th>
+    <th align="center">tup hot upd</th>
+    <th align="center">live tup</th>
+    <th align="center">dead tup</th>
+    <th align="center">vacuum count</th>
+    <th align="center">autovacuum count</th>
+    <th align="center">analyze count</th>
+    <th align="center">autoanalyze count</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_toast</td>
+    <td align="left">pg_toast_22254139</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">3392</td>
+    <td align="right">0</td>
+    <td align="right">7696</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">7696</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_toast</td>
+    <td align="left">pg_toast_15933451</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">1692</td>
+    <td align="right">3832</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_toast</td>
+    <td align="left">pg_toast_2618</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">1121</td>
+    <td align="right">3452</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">apg_plan_mgmt</td>
+    <td align="left">plans</td>
+    <td align="right">4</td>
+    <td align="right">36356</td>
+    <td align="right">797</td>
+    <td align="right">605</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_toast</td>
+    <td align="left">pg_toast_2619</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">583</td>
+    <td align="right">1015</td>
+    <td align="right">18</td>
+    <td align="right">0</td>
+    <td align="right">19</td>
+    <td align="right">0</td>
+    <td align="right">-1</td>
+    <td align="right">19</td>
+    <td align="right">0</td>
+    <td align="right">711</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_toast</td>
+    <td align="left">pg_toast_1255</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">512</td>
+    <td align="right">1280</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_21</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_18</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_27</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_default</td>
+    <td align="right">4</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_16</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_17</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_20</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_19</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_25</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_29</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_22</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_23</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_14</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_26</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+</table>
+
+<h4><a name="Table ordered by rows fetched by index scans">Table ordered by rows fetched by index scans</h4>
+<table border="1">
+  <tr>
+    <th align="center">schema</th>
+    <th align="center">table</th>
+    <th align="center">seq scan</th>
+    <th align="center">seq tup read</th>
+    <th align="center">idx scan</th>
+    <th align="center">idx tup fetch</th>
+    <th align="center">tup ins</th>
+    <th align="center">tup upd</th>
+    <th align="center">tup del</th>
+    <th align="center">tup hot upd</th>
+    <th align="center">live tup</th>
+    <th align="center">dead tup</th>
+    <th align="center">vacuum count</th>
+    <th align="center">autovacuum count</th>
+    <th align="center">analyze count</th>
+    <th align="center">autoanalyze count</th>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_toast</td>
+    <td align="left">pg_toast_22254139</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">3392</td>
+    <td align="right">0</td>
+    <td align="right">7696</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">7696</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_toast</td>
+    <td align="left">pg_toast_15933451</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">1692</td>
+    <td align="right">3832</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_toast</td>
+    <td align="left">pg_toast_2618</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">1121</td>
+    <td align="right">3452</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">apg_plan_mgmt</td>
+    <td align="left">plans</td>
+    <td align="right">4</td>
+    <td align="right">36356</td>
+    <td align="right">797</td>
+    <td align="right">605</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_toast</td>
+    <td align="left">pg_toast_2619</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">583</td>
+    <td align="right">1015</td>
+    <td align="right">18</td>
+    <td align="right">0</td>
+    <td align="right">19</td>
+    <td align="right">0</td>
+    <td align="right">-1</td>
+    <td align="right">19</td>
+    <td align="right">0</td>
+    <td align="right">711</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">pg_toast</td>
+    <td align="left">pg_toast_1255</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">512</td>
+    <td align="right">1280</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_21</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_18</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_27</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_default</td>
+    <td align="right">4</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_16</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_17</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_20</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_19</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_25</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_29</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_22</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_23</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_14</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+  <tr valign="top">
+    <td align="left">perfstat</td>
+    <td align="left">snap_p2022_12_26</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">316</td>
+    <td align="right">316</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+    <td align="right">0</td>
+  </tr>
+</table>
+
+<h4>Complete List of SQL Text</h4>
+<table border="1">
+  <tr>
+    <th align="center">queryid</th>
+    <th align="center">query</th>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-1020567771464004107">-1020567771464004107</td>
+    <td align="left">SELECT pid, now() - pg_stat_activity.query_start AS duration, query, state FROM pg_stat_activity WHERE (now() - pg_stat_activity.query_start) > interval $1 AND state=$2</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-1032710879627254342">-1032710879627254342</td>
+    <td align="left">-- Create new sample<br />
+<br />
+select partman.run_maintenance($1)</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="1051141228542506157">1051141228542506157</td>
+    <td align="left">SET statement_timeout = 60000</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="1229534637823293089">1229534637823293089</td>
+    <td align="left">SET extra_float_digits = 2</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-128744194504451862">-128744194504451862</td>
+    <td align="left">insert into perfstat.pg_stat_statements_hist <br />
+  select a.*, $1, b.*<br />
+    from (select * from perfstat.snap order by snap_id desc limit $3) a, perfstat.pg_stat_statements_eqbopc03p_instance_2 b<br />
+    where dbid = (select oid from pg_database where datname = current_database())</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-1438517490859612793">-1438517490859612793</td>
+    <td align="left">FETCH 100 FROM c1</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-2183793328889736026">-2183793328889736026</td>
+    <td align="left">insert into perfstat.pg_stat_activity_hist<br />
+  select a.*, $1, b.*<br />
+    from (select * from perfstat.snap order by snap_id desc limit $3) a, perfstat.pg_stat_activity_eqbopc03p_instance_2 b<br />
+    where datid = (select oid from pg_database where datname = current_database())</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="2397681704071010949">2397681704071010949</td>
+    <td align="left">BEGIN</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="2397681704071010949">2397681704071010949</td>
+    <td align="left">BEGIN</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="2436620553143042317">2436620553143042317</td>
+    <td align="left">SELECT activity.pid, activity.query, blocking.pid AS blocking_id, blocking.query AS blocking_query FROM pg_stat_activity AS activity JOIN pg_stat_activity AS blocking ON blocking.pid = ANY(pg_blocking_pids(activity.pid))</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-2858549490667659655">-2858549490667659655</td>
+    <td align="left">insert into perfstat.pg_stat_database_hist<br />
+  select a.*, b.*, c.*<br />
+  from (select * from perfstat.snap order by snap_id desc limit $1) a,<br />
+       (select server_id from aurora_replica_status() where session_id = $2) b,<br />
+       pg_stat_database c<br />
+  where datid = (select oid from pg_database where datname = current_database())</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="3100600542527564607">3100600542527564607</td>
+    <td align="left">SET DateStyle = 'ISO'</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="3213663317253795746">3213663317253795746</td>
+    <td align="left">insert into perfstat.pg_stat_activity_sample<br />
+  select now(), b.*, c.*<br />
+  from (select server_id from aurora_replica_status() where session_id = $1) b,<br />
+       pg_stat_activity c<br />
+  where c.datid = (select oid from pg_database where datname = current_database())</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-3215345658728344480">-3215345658728344480</td>
+    <td align="left">select oid, typbasetype from pg_type where typname = $1</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="3273643683961306154">3273643683961306154</td>
+    <td align="left">SELECT pid, query, wait_event FROM pg_stat_activity WHERE state=$1 AND NOT wait_event=$2</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="3529355313445295858">3529355313445295858</td>
+    <td align="left">SET intervalstyle = postgres</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="3694949039461716331">3694949039461716331</td>
+    <td align="left">COMMIT</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="4160300323129592204">4160300323129592204</td>
+    <td align="left">insert into perfstat.pg_stat_all_tables_hist<br />
+  select a.*, $1, b.*<br />
+    from (select * from perfstat.snap order by snap_id desc limit $3) a, perfstat.pg_stat_all_tables_eqbopc03p_instance_2 b</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="4319794120535334560">4319794120535334560</td>
+    <td align="left">SELECT  "source" ,  cast(to_char("last_update", $1) as varchar(50)) FROM "qbo"."gg_heartbeat" WHERE "source" IN ( $2 )  ORDER BY "source" COLLATE "C"  ASC</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-4541074755048071015">-4541074755048071015</td>
+    <td align="left">-- Create new snap<br />
+<br />
+insert into perfstat.instance_hist <br />
+  select a.*, $1, b.*<br />
+    from (select * from perfstat.snap order by snap_id desc limit $3) a, perfstat.instance_start_time_eqbopc03p_instance_2 b</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="4891586885318523211">4891586885318523211</td>
+    <td align="left">begin transaction</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="5125610066150999022">5125610066150999022</td>
+    <td align="left">SET extra_float_digits = 3</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="5380369076896549711">5380369076896549711</td>
+    <td align="left">select server_id as dbinstanceid, aws_region, visibility_lag_in_msec from aurora_global_db_instance_status() where visibility_lag_in_msec is not NULL</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="5387600465647979654">5387600465647979654</td>
+    <td align="left">COMMIT TRANSACTION</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="5396683731220376220">5396683731220376220</td>
+    <td align="left">insert into perfstat.pg_stat_all_tables_hist<br />
+  select a.*, b.*, c.*<br />
+  from (select * from perfstat.snap order by snap_id desc limit $1) a,<br />
+       (select server_id from aurora_replica_status() where session_id = $2) b,<br />
+       pg_stat_all_tables c</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="5495374963773122853">5495374963773122853</td>
+    <td align="left">insert into perfstat.host_stat_hist select a.*, $1, $3, $5, $7 from (select * from perfstat.snap order by snap_id desc limit $8) a</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-5510623395206710615">-5510623395206710615</td>
+    <td align="left">SELECT nspname, sum(pg_relation_size(c.oid)) AS size_bytes, now()::date sample_date FROM pg_class c LEFT JOIN pg_namespace n ON (n.oid = c.relnamespace) GROUP BY nspname</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-5523777252683449658">-5523777252683449658</td>
+    <td align="left">DECLARE c1 CURSOR FOR<br />
+SELECT datid, datname, pid, leader_pid, usesysid, usename, application_name, client_addr, client_hostname, client_port, backend_start, xact_start, query_start, state_change, wait_event_type, wait_event, state, backend_xid, backend_xmin, query_id, query, backend_type FROM pg_catalog.pg_stat_activity WHERE ((datid = $1::oid))</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-561560039988014454">-561560039988014454</td>
+    <td align="left">-- Create new sample<br />
+<br />
+insert into perfstat.pg_stat_activity_sample<br />
+  select now(), $1, c.*<br />
+  from perfstat.pg_stat_activity_eqbopc03p_instance_1 c<br />
+  where c.datid = (select oid from pg_database where datname = current_database())</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="5802205381641478037">5802205381641478037</td>
+    <td align="left">SET timezone = 'UTC'</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="5958479588914318522">5958479588914318522</td>
+    <td align="left">START TRANSACTION ISOLATION LEVEL REPEATABLE READ</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-6127590146053768719">-6127590146053768719</td>
+    <td align="left">insert into perfstat.dba_plans_hist<br />
+  select a.*, $1, b.*<br />
+    from (select * from perfstat.snap order by snap_id desc limit $3) a, perfstat.dba_plans_eqbopc03p_instance_2 b</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-6161684126527351558">-6161684126527351558</td>
+    <td align="left">insert into perfstat.pg_stat_statements_hist <br />
+  select a.*, b.*, c.*<br />
+  from (select * from perfstat.snap order by snap_id desc limit $1) a,<br />
+       (select server_id from aurora_replica_status() where session_id = $2) b,<br />
+        pg_stat_statements c<br />
+  where dbid = (select oid from pg_database where datname = current_database())</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="6185099911762861940">6185099911762861940</td>
+    <td align="left">SELECT db_list.datname AS db_name, pg_database_size(db_list.datname) as db_size FROM pg_database db_list ORDER BY pg_database_size(db_list.datname) desc</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-6327990488402249785">-6327990488402249785</td>
+    <td align="left">UPDATE "qbo"."gg_heartbeat"                                 SET "source"=$1, "last_update"=$2                                  WHERE "source"=$3</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="64027531064122852">64027531064122852</td>
+    <td align="left">SELECT schemaname,<br />
+       relname,<br />
+       n_tup_ins as inserts,<br />
+       n_tup_upd as updates,<br />
+       n_tup_del as deletes,<br />
+       n_tup_hot_upd as hot_updates,<br />
+       n_live_tup as live_tuples,<br />
+       n_dead_tup as dead_tuples,<br />
+       n_mod_since_analyze as mod_since_analyze,<br />
+       extract($1 from last_autovacuum) as last_autovacuum,<br />
+       extract($2 from last_autoanalyze) as last_autoanalyze,<br />
+       autovacuum_count,<br />
+       autoanalyze_count,<br />
+       extract($3 from last_vacuum) as last_vacuum,<br />
+       extract($4 from last_analyze) as last_analyze,<br />
+       vacuum_count,<br />
+       analyze_count<br />
+FROM pg_stat_user_tables</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="6416765772093671735">6416765772093671735</td>
+    <td align="left">select server_id<br />
+  from aurora_replica_status()<br />
+  where session_id = $1</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-6682105215271781487">-6682105215271781487</td>
+    <td align="left">SET datestyle = ISO</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="6803460167082891328">6803460167082891328</td>
+    <td align="left">SELECT table_schema, table_name,<br />
+    total_bytes<br />
+     , table_bytes<br />
+     , index_bytes<br />
+     , toast_bytes<br />
+FROM (<br />
+         SELECT *, total_bytes-index_bytes-COALESCE(toast_bytes,$1) AS table_bytes FROM (<br />
+                                                                                           SELECT nspname AS table_schema, regexp_replace(relname,$2,$3) AS TABLE_NAME<br />
+                                                                                                , sum(c.reltuples) AS row_estimate<br />
+                                                                                                , sum(pg_total_relation_size(c.oid)) AS total_bytes<br />
+                                                                                                , sum(pg_indexes_size(c.oid)) AS index_bytes<br />
+                                                                                                , sum(pg_total_relation_size(reltoastrelid)) AS toast_bytes<br />
+                                                                                           FROM pg_class c<br />
+                                                                                                    LEFT JOIN pg_namespace n ON n.oid = c.relnamespace<br />
+                                                                                           WHERE relkind = $4<br />
+                                                                                           GROUP by nspname,regexp_replace(relname,'_p\d+','')<br />
+                                                                                           HAVING sum(pg_total_relation_size(c.oid)) > $5<br />
+                                                                                       ) a<br />
+     ) a order by total_bytes desc</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="6936134556324061259">6936134556324061259</td>
+    <td align="left">SELECT datid, datname, round($1 * blks_hit / (blks_hit + blks_read), $2) as cache_hit_ratio FROM pg_stat_database WHERE (blks_hit + blks_read) > $3</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-6971931871213879695">-6971931871213879695</td>
+    <td align="left">show max_identifier_length</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-7048893708227198588">-7048893708227198588</td>
+    <td align="left">SELECT count(*) FROM pg_stat_activity WHERE state=$1</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="7100550043432595085">7100550043432595085</td>
+    <td align="left">insert into perfstat.dba_plans_hist<br />
+  select a.*, b.*, c.*<br />
+  from (select * from perfstat.snap order by snap_id desc limit $1) a,<br />
+       (select server_id from aurora_replica_status() where session_id = $2) b,<br />
+       apg_plan_mgmt.dba_plans c</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="7194475153526070938">7194475153526070938</td>
+    <td align="left">CLOSE c1</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="7533282351734321369">7533282351734321369</td>
+    <td align="left">insert into perfstat.pg_stat_database_hist<br />
+  select a.*, $1, b.*<br />
+    from (select * from perfstat.snap order by snap_id desc limit $3) a, perfstat.pg_stat_database_eqbopc03p_instance_2 b<br />
+    where datid = (select oid from pg_database where datname = current_database())</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-7657275187723770664">-7657275187723770664</td>
+    <td align="left">insert into perfstat.pg_stat_all_indexes_hist<br />
+  select a.*, b.*, c.*<br />
+  from (select * from perfstat.snap order by snap_id desc limit $1) a,<br />
+       (select server_id from aurora_replica_status() where session_id = $2) b,<br />
+       pg_stat_all_indexes c</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="7779680743975189717">7779680743975189717</td>
+    <td align="left">SET search_path = pg_catalog</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-7873017616315534743">-7873017616315534743</td>
+    <td align="left">insert into perfstat.pg_stat_all_indexes_hist<br />
+  select a.*, $1, b.*<br />
+    from (select * from perfstat.snap order by snap_id desc limit $3) a, perfstat.pg_stat_all_indexes_eqbopc03p_instance_2 b</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="8085340880788646241">8085340880788646241</td>
+    <td align="left">commit</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="8085340880788646241">8085340880788646241</td>
+    <td align="left">commit</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="8287667184453487934">8287667184453487934</td>
+    <td align="left">select server_id<br />
+  from aurora_replica_status()<br />
+  where exists (select $1 from information_schema.foreign_tables where foreign_server_name = replace(server_id, $2, $3) and foreign_table_schema = $4)<br />
+    and session_id = $5</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-8329537378231066664">-8329537378231066664</td>
+    <td align="left">SELECT<br />
+    relname,<br />
+    indexrelname,<br />
+    idx_scan,<br />
+    idx_tup_read,<br />
+    idx_tup_fetch,<br />
+    pg_relation_size(indexrelname::regclass) as size<br />
+FROM<br />
+    pg_stat_all_indexes<br />
+WHERE<br />
+    schemaname = $1<br />
+  AND indexrelname NOT LIKE $2<br />
+  AND idx_scan = $3<br />
+  AND idx_tup_read = $4<br />
+  AND idx_tup_fetch = $5<br />
+ORDER BY<br />
+    pg_relation_size(indexrelname::regclass) DESC</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="836252411031314508">836252411031314508</td>
+    <td align="left">show transaction_isolation</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-8869474762629491569">-8869474762629491569</td>
+    <td align="left">select now() - pg_postmaster_start_time() as uptime, case when pg_is_in_recovery() = $1 then $2 else $3 end as role</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="8972793084872953885">8972793084872953885</td>
+    <td align="left">insert into perfstat.pg_stat_activity_hist<br />
+  select a.*, b.*, c.*<br />
+  from (select * from perfstat.snap order by snap_id desc limit $1) a,<br />
+       (select server_id from aurora_replica_status() where session_id = $2) b,<br />
+       pg_stat_activity c<br />
+  where datid = (select oid from pg_database where datname = current_database())</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="9046686748180979929">9046686748180979929</td>
+    <td align="left">insert into perfstat.instance_hist<br />
+  select a.*, b.*, pg_postmaster_start_time()<br />
+  from (select * from perfstat.snap order by snap_id desc limit $1) a,<br />
+       (select server_id from aurora_replica_status() where session_id = $2) b</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-9078064791076675244">-9078064791076675244</td>
+    <td align="left">SELECT plan_hash, status, environment_variables, plan_outline, compatibility_level, enabled, last_used FROM apg_plan_mgmt.plans  WHERE sql_hash = $1 AND status <= $2  ORDER BY status</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-9078064791076675244">-9078064791076675244</td>
+    <td align="left">SELECT plan_hash, status, environment_variables, plan_outline, compatibility_level, enabled, last_used FROM apg_plan_mgmt.plans  WHERE sql_hash = $1 AND status <= 1  ORDER BY status</td>
+  </tr>
+  <tr valign="top">
+    <td align="left"><a name="-951605452328581744">-951605452328581744</td>
+    <td align="left">insert into perfstat.snap select coalesce(max(snap_id), $1)+$2, now() from perfstat.snap</td>
+  </tr>
+</table>
+
