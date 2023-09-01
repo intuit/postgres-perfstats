@@ -53,3 +53,5 @@ insert into perfstat.dba_plans_hist
   from (select * from perfstat.snap order by snap_id desc limit 1) a,
        (select server_id from aurora_replica_status() where session_id = 'MASTER_SESSION_ID') b,
        apg_plan_mgmt.dba_plans c;
+
+select partman.run_maintenance('perfstat.host_stat_hist');
